@@ -22,20 +22,20 @@ export default function AfroBeats() {
           !small && (
             <div className={`${styles.container} ${newStyles.container} `}>
               <div className={styles.img}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+         
                 <img loading="eager" src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/v3/web_afrobeats1.webp"
                      alt=" " />
                 <p className="text3">Listen to your favorite artistes on music apps</p>
               </div>
               <div className={styles.img}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+         
                 <img loading="eager" src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/v3/web_afrobeats2.webp"
                      alt=" " />
                 
                 <p className="text3">Purchase products off singles and album covers</p>
               </div>
               <div className={styles.img}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+         
                 <img loading="eager" src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/v3/web_afrobeat3.webp"
                      alt=" " />
                 
@@ -54,7 +54,7 @@ export default function AfroBeats() {
                         loop
                         modules={[Autoplay]}>
                   <SwiperSlide className={`${styles.slide} ${newStyles.slide}`}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+             
                     <img
                       src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/v3/mobile_afrobeats1.webp"
                       loading="eager" alt="" />
@@ -64,7 +64,7 @@ export default function AfroBeats() {
                   </SwiperSlide>
                   <SwiperSlide className={`${styles.slide} ${newStyles.slide}`}>
                     <div>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
+               
                       <img loading="eager"
                            src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/v3/mobile_afrobeats2.webp"
                            alt="" />
@@ -77,7 +77,7 @@ export default function AfroBeats() {
                   
                   </SwiperSlide>
                   <SwiperSlide className={`${styles.slide} ${newStyles.slide}`}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+             
                     <img loading="eager"
                          src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/v3/mobile_afrobeat3.webp"
                          alt="" />
