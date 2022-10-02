@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Footer.module.scss";
 
 import Link from 'next/link';
@@ -48,7 +47,6 @@ function Footer({color}) {
                 </div>
                 <div className={`${styles.footerBottom} globalTextDark200`}>
                     <div className={styles.bottomLeft}>
-                        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                         <a href="/">
                             <picture>
                                 <source srcSet="https://d3t7szus8c85is.cloudfront.net/websitecontent/icons/edekee-logo.svg" media="(min-width: 800px)"/>

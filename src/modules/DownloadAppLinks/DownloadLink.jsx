@@ -9,7 +9,7 @@ export default function DownloadLink() {
                    rel="noreferrer"
                    target="_blank"
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  
 	                <img loading="lazy" src="https://d3t7szus8c85is.cloudfront.net/websitecontent/icons/googlePlayBtn.svg" alt=""/>
                 </a>
 
@@ -20,7 +20,7 @@ export default function DownloadLink() {
 					    rel="noreferrer"
 					    target="_blank"
 					 >
-					{/* eslint-disable-next-line @next/next/no-img-element */}
+					
 					<img loading="lazy" src="https://d3t7szus8c85is.cloudfront.net/websitecontent/icons/appStoreBtn.svg" alt=""/>
 							{/*<p className="text3">( Beta )</p>*/}
 					 </a>

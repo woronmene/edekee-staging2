@@ -136,7 +136,7 @@ export default function Home() {
                 </div>
             </main>
             {/* eslint-disable-next-line no-undef */}
-            <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY}`} />
+            {/* <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY}`} />
     
             <Script strategy="lazyOnload">
                 {`
@@ -148,7 +148,7 @@ export default function Home() {
                     page_path: window.location.pathname,
                     });
                 `}
-            </Script>
+            </Script> */}
             <Script id="lazyload-cdn" onLoad={() => {
                 // eslint-disable-next-line no-unused-vars,no-undef
                 const lazyLoadInstance = new LazyLoad({

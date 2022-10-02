@@ -1,9 +1,9 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import { Footer } from "../../common/components";
 import { JustHeader, ProductLayout1, ProductLayout2, WhatElse } from "../../modules/ProductsPage";
 import styles from "../../modules/ProductsPage/ProductPage.module.scss";
-import Script from "next/script";
+// import Script from "next/script";
 
 export default function Index() {
   return (
@@ -53,10 +53,9 @@ export default function Index() {
         <WhatElse />
       </div>
       <Footer />
-      <Script strategy="lazyOnload"
+      {/* <Script strategy="lazyOnload"
               src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY}`} />
   
-      {/* eslint-disable-next-line @next/next/inline-script-id */}
       <Script strategy="lazyOnload">
         {`
                     window.dataLayer = window.dataLayer || [];
@@ -66,7 +65,7 @@ export default function Index() {
                     page_path: window.location.pathname,
                     });
                 `}
-      </Script>
+      </Script> */}
     </>
   );
 }

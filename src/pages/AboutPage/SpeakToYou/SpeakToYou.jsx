@@ -27,7 +27,7 @@ export default function SpeakToYou() {
                 {
                     !small &&
                     (
-                        // eslint-disable-next-line jsx-a11y/media-has-caption
+                        
                         <video className="videos" muted playsInline loop autoPlay
                                poster="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/Test.webp">
                             <source src="https://d3t7szus8c85is.cloudfront.net/websitecontent/videos/Test.mp4"
@@ -45,7 +45,7 @@ export default function SpeakToYou() {
                 {
                     small &&
                     (
-                        // eslint-disable-next-line jsx-a11y/media-has-caption
+                        
                         <video className="videos" muted playsInline loop autoPlay
                                poster="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/mobileSpeak.webp">
                             {/* <source src="https://d3t7szus8c85is.cloudfront.net/websitecontent/videos/Test.mp4" */}

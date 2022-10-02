@@ -40,7 +40,6 @@ export default function ForEveryone() {
                     {/* https://d3t7szus8c85is.cloudfront.net/websitecontent/images/Test2.webp */}
                     {/* https://d3t7szus8c85is.cloudfront.net/websitecontent/videos/Test2.webm */}
                     {/* <VideoPlayerPreloaded poster="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/Test2.jpg" urlMp4={'https://d3t7szus8c85is.cloudfront.net/websitecontent/videos/Test2.mp4'}></VideoPlayerPreloaded> */}
-                    {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
                     <video 	className="lazy" muted playsInline loop autoPlay
                               poster="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/Test2.jpg">
                         <source data-src="https://d3t7szus8c85is.cloudfront.net/websitecontent/videos/test2.mp4"

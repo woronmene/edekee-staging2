@@ -1,7 +1,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { ContactMod } from "../modules/ContactPage";
-import Script from "next/script";
+// import Script from "next/script";
 
 const DynamicFooter = dynamic(
   () => import("../common/components/Footer/Footer"),
@@ -49,10 +49,9 @@ export default function Contact() {
           />
         </div>
       </main>
-      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY}`} />
+      {/* <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY}`} /> */}
   
-      {/* eslint-disable-next-line @next/next/inline-script-id */}
-      <Script strategy="lazyOnload">
+      {/* <Script strategy="lazyOnload">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
@@ -61,7 +60,7 @@ export default function Contact() {
                     page_path: window.location.pathname,
                     });
                 `}
-      </Script>
+      </Script> */}
      
     </div>
   );

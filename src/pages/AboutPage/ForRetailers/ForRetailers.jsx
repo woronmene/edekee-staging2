@@ -1,4 +1,3 @@
-import React from "react";
 import newStyles from "./ForRetailers.module.scss";
 import styles from '../ForCreators/ForCreators.module.scss'
 import {motion} from "framer-motion";

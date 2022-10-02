@@ -49,7 +49,7 @@ function Manufacturers() {
                     <div className={styles.image}>
                         <div className={styles.overlay}></div>
                         {/* https://d3t7szus8c85is.cloudfront.net/websitecontent/images/manufacturers.webp */}
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        
                         <img loading="lazy" src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/manufacturers.jpg" alt=
                             ""/>
 

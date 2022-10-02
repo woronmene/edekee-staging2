@@ -1,6 +1,5 @@
 import styles from "../AfroBeats/AfroBeats.module.scss";
 import newStyles from "./ForMovies.module.scss";
-import React from "react";
 
 export default function ForMovies() {
   return (

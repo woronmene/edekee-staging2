@@ -1,9 +1,8 @@
-import React from "react";
 import {Footer} from "../../common/components";
 import styles from "../../modules/ProductsPage/ProductPage.module.scss";
 import {HavePlatform, JustHeader, ProductLayout1, ProductLayout2} from "../../modules/ProductsPage";
 import Head from "next/head";
-import Script from "next/script";
+// import Script from "next/script";
 
 export default function Creators() {
     return (
@@ -20,7 +19,6 @@ export default function Creators() {
                   href="https://d3t7szus8c85is.cloudfront.net/websitecontent/icons/72x72.png"/>
     
             <link rel="icon" href="/edekee_favicon.svg"/>
-            {/* eslint-disable-next-line @next/next/next-script-for-ga */}
           </Head>
             <div className={styles.products}>
                 <ProductLayout1
@@ -52,11 +50,11 @@ export default function Creators() {
                 <HavePlatform/>
             </div>
             <Footer/>
-          <Script strategy="lazyOnload"
+          {/* <Script strategy="lazyOnload"
                   src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY}`} />
   
           {/* eslint-disable-next-line @next/next/inline-script-id */}
-          <Script strategy="lazyOnload">
+          {/* <Script strategy="lazyOnload">
             {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
@@ -65,7 +63,7 @@ export default function Creators() {
                     page_path: window.location.pathname,
                     });
                 `}
-          </Script>
+          </Script> */}
         </>
     )
 }

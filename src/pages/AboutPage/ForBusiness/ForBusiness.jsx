@@ -65,7 +65,6 @@ export default function ForBusiness() {
                         <div className={`${styles.videosContainer}  globalContainer`}>
                             <div className={styles.item1}>
                                 {/* https://d3t7szus8c85is.cloudfront.net/websitecontent/images/business3.webp */}
-                                {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
                                 <video 	className="lazy" muted playsInline loop autoPlay
                                           poster="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/webVideo2.png">
                                     <source data-src="https://d3t7szus8c85is.cloudfront.net/websitecontent/videos/webVideo2.mp4"
@@ -73,12 +72,11 @@ export default function ForBusiness() {
                                     {/* <source src="https://d3t7szus8c85is.cloudfront.net/websitecontent/videos/Test.mov" */}
                                     {/* 		type="video/quicktime"/> */}
                                     <source data-src="https://d3t7szus8c85is.cloudfront.net/websitecontent/videos/webVideo2.webm"
-                                    		type="video/webm"/>
+                                    type="video/webm"/>
                                 </video>
                             </div>
                             <div className={styles.item2}>
                                 {/* https://d3t7szus8c85is.cloudfront.net/websitecontent/images/business2.webp */}
-                                {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
                                 <video 	className="lazy" muted playsInline loop autoPlay
                                           poster="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/webVideo1.png">
                                     <source src="https://d3t7szus8c85is.cloudfront.net/websitecontent/videos/webVideo1.mp4"
@@ -104,21 +102,21 @@ export default function ForBusiness() {
                                         modules={[Autoplay]}>
                                     <SwiperSlide className={styles.slide}>
                                         {/* src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/business2.webp" */}
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        
                                         <img
                                             src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/webVideo3.webp"
                                             loading='lazy' alt=""/>
                                     </SwiperSlide>
                                     <SwiperSlide className={styles.slide}>
                                         {/* https://d3t7szus8c85is.cloudfront.net/websitecontent/images/business3.webp */}
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        
                                         <img loading='lazy'
                                              src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/webVideo2.webp"
                                              alt=""/>
                                     </SwiperSlide>
                                     <SwiperSlide className={styles.slide}>
                                         {/* https://d3t7szus8c85is.cloudfront.net/websitecontent/images/business1.webp */}
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        
                                         <img loading='lazy'
                                              src="https://d3t7szus8c85is.cloudfront.net/websitecontent/images/webVideo1.webp"
                                              alt=""/>
