@@ -1,0 +1,129 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.buildShop {
+  background-color: #fff;
+
+  min-height: 100vh;
+  // height: 100%;
+
+  color: #000;
+  .wrapper {
+    padding: 20vh 0;
+    // padding-bottom: 0;
+    width: 100%;
+    // height: 100%;
+    display: flex;
+    // border: 2px solid rgb(3, 109, 53);
+
+    @include mdMaxBreakPoint {
+      padding: 10vh 0;
+      // padding: 10vh 40px 0 40px;
+      // padding: 0 40px;
+      // padding-bottom: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+      // width: 90%;
+      margin: 0 auto;
+      flex-direction: column;
+      // border: 2px solid rgb(3, 109, 53);
+    }
+
+    .content {
+      margin: 0 auto;
+      // border: 1px solid red;
+
+      .mainHeading {
+        margin-bottom: 40px;
+      }
+
+      .heading {
+        font-weight: Bold;
+        font-size: 24px;
+        line-height: 29px;
+        line-height: 100%;
+        color: #212121f2;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .info {
+        // border: 1px solid red;
+        margin: 0 auto;
+        font-weight: Bold;
+        font-size: 12px;
+        line-height: 17px;
+        line-height: 100%;
+        color: #525252;
+        width: 80%;
+        text-align: center;
+      }
+      .logoSection {
+        margin: 70px 0;
+      }
+      .selectInput {
+        display: none;
+      }
+
+      .logoImage {
+        width: 100px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+      }
+      .uploadText {
+        color: #21212199;
+        margin-bottom: 30px;
+      }
+
+      .optionalText {
+        color: #212121f2;
+      }
+    }
+    .stateSection {
+      // border: 1px solid rgb(0, 72, 255);
+      display: flex;
+      justify-content: space-between;
+
+      .item {
+        width: 40%;
+        // border: 1px solid red;
+        // border: 1px solid red;
+      }
+    }
+
+    .deliverText {
+      color: #212121;
+      font-size: 12px;
+      margin: 40px 0;
+    }
+    .questionmark {
+      color: #21212199;
+    }
+
+    .deliveryInfoBody {
+      margin-bottom: 60px;
+      .deliveryOption {
+        display: flex;
+        align-items: center;
+        // border: 1px solid green;
+        font-size: 12px;
+        margin-bottom: 20px;
+
+        p {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .buttonSection {
+      // border: 1px solid red;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

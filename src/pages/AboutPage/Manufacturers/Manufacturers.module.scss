@@ -1,0 +1,78 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.manufacturers {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    color: black;
+    //display: flex;
+    position: relative;
+    padding: 0 3vw 10vw;
+    display: flex;
+    justify-content: center;
+
+    @include mdMaxBreakPoint {
+      height: 100vh;
+      padding: 0 2vh 10vh;
+    }
+
+
+    .image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        //background: linear-gradient(0deg, rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1));
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        //aspect-ratio: 1/1;
+
+        @include lgMaxBreakPoint {
+          object-fit:cover;
+          object-position: center;
+        }
+      }
+      .content {
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+
+        .heading {
+
+        }
+
+        .paragraph{
+          margin: 5vh 0;
+          opacity: 0.9;
+        }
+      }
+    }
+
+
+  }
+}

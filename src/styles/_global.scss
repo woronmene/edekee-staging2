@@ -1,0 +1,290 @@
+@import "mixins";
+@import "functions";
+@import "variables";
+
+.globalContainer {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+.globalContainer1 {
+  margin: 0 auto;
+  max-width: 85vw;
+
+  @include fullMaxBreakPoint {
+    max-width: 80vw;
+  }
+}
+
+.globalPurple {
+  font-weight: 700;
+  color: $purple !important;
+}
+
+.globalContent {
+  width: 52%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3vw;
+  line-height: 2.9vw;
+
+  @include xlMaxBreakPoint {
+    font-size: toRem(17);
+  }
+  @include mdMaxBreakPoint {
+    width: 90%;
+    line-height: 25px;
+  }
+}
+
+.width70 {
+  width: 60%;
+
+  @include lgMaxBreakPoint {
+    width: 70%;
+  }
+  @include mdMaxBreakPoint {
+    width: 90%;
+  }
+}
+
+.mlAuto {
+  margin-left: auto;
+
+  @include mdMaxBreakPoint {
+    margin-left: 0;
+  }
+}
+
+.globalHeading {
+  font-style: normal;
+  font-weight: 700;
+
+  line-height: 5vw;
+  margin-bottom: 20px;
+
+  @include xlMaxBreakPoint {
+    line-height: 50px;
+    font-size: toRem(40);
+  }
+  @include lgMaxBreakPoint {
+    line-height: 48px;
+  }
+
+  @include mdMaxBreakPoint {
+    // width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+.globalSubheading {
+  font-size: 16px;
+  color: $purple;
+  //margin-bottom: 20px;
+
+  @include xlMaxBreakPoint {
+    font-size: toRem(16);
+  }
+}
+
+.globalHeading2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2vw;
+
+  line-height: 3.9vw;
+  margin: 10px 0;
+
+  @include xlMaxBreakPoint {
+    line-height: 50px;
+    font-size: toRem(30);
+  }
+  @include lgMaxBreakPoint {
+    line-height: 48px;
+  }
+
+  @include mdMaxBreakPoint {
+    // width: 90%;
+    //margin-bottom: 30px;
+  }
+}
+
+.globalDot {
+  color: $purple;
+}
+
+.globalTextLight {
+  color: $text-light;
+}
+
+.globalTextDark50 {
+  color: $text-dark-50;
+}
+
+.globalTextDark100 {
+  color: $text-dark-100;
+}
+
+.globalTextDark200 {
+  color: $text-dark-200;
+}
+
+.globalTextDark300 {
+  color: $text-dark-300;
+}
+
+.globalTextDark400 {
+  color: $text-dark-400;
+}
+
+.globalTextDark500 {
+  color: $text-dark-500;
+}
+
+//martin
+.topButtonMargin {
+  padding-top: 5vh;
+  z-index: 10;
+}
+
+.header1 {
+  //170px
+  font-size: 9vw;
+  @include lgMaxBreakPoint {
+    font-size: toRem(48);
+  }
+}
+
+.header2 {
+  //128px
+  font-size: 7.5vw ;
+  line-height: 155px;
+
+  @include lgMaxBreakPoint {
+    font-size: toRem(48);
+    line-height: toRem(58);
+  }
+}
+
+.header3 {
+  //100px
+  font-size: 6.6vw ;
+
+  @include  lgMaxBreakPoint {
+    font-size: toRem(48);
+  }
+}
+
+.header4 {
+  //96px
+  font-size: 5.8vw ;
+  @include lgMaxBreakPoint {
+    font-size: toRem(48);
+  }
+}
+
+.header45 {
+  font-size: 5.2vw ;
+  @include lgMaxBreakPoint {
+    font-size: toRem(36);
+  }
+}
+
+.header5 {
+  //88px
+  font-size: 4.6vw;
+  line-height: 107px;
+  @include lgMaxBreakPoint {
+    font-size: toRem(36);
+  }
+
+}
+
+.header6 {
+  //80px
+  font-size: 4.2vw;
+  @include lgMaxBreakPoint {
+    font-size: toRem(36);
+  }
+
+}
+
+.header7 {
+  //64px
+  font-size: 3.8vw;
+  @include lgMaxBreakPoint {
+    font-size: toRem(36);
+  }
+
+}
+
+.header8 {
+  //48px
+  font-size: 2.5vw;
+  @include lgMaxBreakPoint {
+    font-size: toRem(24);
+  }
+}
+
+.text1 {
+  //36px
+  font-size:2.2vw ;
+
+  @include lgMaxBreakPoint {
+    font-size: toRem(20);
+  }
+}
+
+.text2 {
+  //32px
+  font-size:2vw ;
+
+  @include lgMaxBreakPoint {
+    font-size: toRem(16);
+  }
+}
+
+.text3 {
+  //24px
+  font-size:1.2vw ;
+
+  @include lgMaxBreakPoint {
+    font-size: toRem(14);
+  }
+}
+
+.text4 {
+  //16px
+  font-size:0.8vw ;
+
+  @include lgMaxBreakPoint {
+    font-size: toRem(10);
+  }
+}
+
+.error {
+  font-size: 0.8em;
+  color : red;
+  margin-top: 10px;
+  text-align: left;
+  opacity: .5;
+}
+
+
+.millik {
+  font-family: Millik, sans-serif;
+}
+
+.text-gray {
+  color : $text-dark-200
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.text-blue {
+  color : $blue;
+}
+
+
+//martin

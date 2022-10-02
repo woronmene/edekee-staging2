@@ -1,0 +1,66 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.productCard {
+  width: 100%;
+  aspect-ratio: 1;
+  //   border: 1px solid red;
+  margin: 0 auto;
+  position: relative;
+  //   background-image: url("../../../public/images/productPlaceholder.png");
+  //   background-position: center;
+  //   background-size: cover;
+  cursor: pointer;
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 1;
+  //   border: 1px solid rgb(68, 0, 255);
+  margin: 0 auto;
+  position: relative;
+  // background-image: url("../../../../public/img/productImage.png");
+  //   background-image: url("../../../public/images/productPlaceholder.png");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.badge {
+  width: 2.8rem;
+  height: 1.5rem;
+  border-radius: 0.125rem;
+  //   background-color: #4282ff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fffffff2;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  &.gift {
+    background-color: #7630fa;
+  }
+
+  &.rent {
+    background-color: #4282ff;
+  }
+
+  &.buy {
+    background-color: #32a071;
+  }
+
+  @include mdMaxBreakPoint {
+    width: 1.75rem;
+    height: 0.75rem;
+    font-size: 10px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

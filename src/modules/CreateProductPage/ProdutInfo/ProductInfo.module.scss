@@ -1,0 +1,24 @@
+.dateOfBirth {
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    width: 25%;
+    // border: 1px solid red;
+  }
+}
+
+.phoneNumberSection {
+  display: flex;
+  justify-content: space-between;
+
+  .item1 {
+    flex: 0.8;
+    margin-right: 25px;
+    // border: 1px solid red;
+  }
+  .item2 {
+    flex: 2;
+    // border: 1px solid red;
+  }
+}

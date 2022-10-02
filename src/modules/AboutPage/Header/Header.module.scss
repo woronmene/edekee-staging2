@@ -1,0 +1,84 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.header {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+
+
+  .thumbnail {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+    padding-bottom: 20vh ;
+
+    @include lgMaxBreakPoint {
+      margin-top: 25vh;
+      padding: 0 5% 12vh;
+    }
+  }
+
+  .headerPrimaryText {
+    margin-bottom: toRem(30);
+    z-index: 3;
+    font-weight: 700;
+  }
+
+  .headerSecondaryText {
+    margin-bottom: toRem(50);
+    z-index: 3;
+
+    @include lgMaxBreakPoint {
+      font-size: toRem(18);
+    }
+  }
+
+  .actionButtons {
+    display: flex;
+    align-items: center;
+
+    .divider {
+      padding: 0 20px;
+      @include lgMaxBreakPoint {
+        padding: 0 10px;
+      }
+    }
+
+    .watch {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-decoration: underline;
+    }
+
+    .videoPlayIcon {
+      // z-index: 2;
+      padding-left: 10px;
+      cursor: pointer;
+      @include lgMaxBreakPoint {
+        padding-left: 5px;
+      }
+
+      img {
+        margin-bottom: -5px;
+        aspect-ratio: 1 / 1;
+        width: 20px;
+        @include lgMaxBreakPoint {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+}

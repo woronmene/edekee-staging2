@@ -1,0 +1,19 @@
+.selectedImage {
+  width: 90px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 0 10px;
+
+  //   border: 1px solid red;
+  // background-image: url("../../../../public/img/Rectangle\ 661.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 auto;
+
+  .cancel {
+    // border: 3px solid red;
+    position: absolute;
+    right: 0;
+  }
+}

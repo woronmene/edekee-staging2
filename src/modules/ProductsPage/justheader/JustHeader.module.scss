@@ -1,0 +1,18 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.JustHeader {
+  background-color: #1f1f1f;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+
+
+  @include mdMaxBreakPoint{
+    justify-content: flex-start;
+    width: 100%;
+
+    padding: 0;
+  }
+}

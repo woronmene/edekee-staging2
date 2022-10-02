@@ -1,0 +1,62 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/functions";
+
+.afroBeats {
+  height: 100%;
+  width: 100%;
+  padding: 20vh 0;
+  @include lgMaxBreakPoint {
+    padding: 15vh 0 5vh;
+  }
+
+  .header {
+    padding-left: 8vw;
+    .texts {
+      padding-bottom: 20vh;
+      @include lgMaxBreakPoint {
+        padding-bottom: 10vh;
+      }
+
+    }
+
+
+  }
+
+
+  .container {
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+
+
+    .img {
+      width: 35%;
+
+
+    }
+
+    p {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .slider {
+    .sliderContainer {
+      .slide {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          height: 20%;
+          color: #8E8E93;
+          text-align: left;
+          line-height: 190.38%;
+        }
+      }
+
+
+    }
+  }
+}

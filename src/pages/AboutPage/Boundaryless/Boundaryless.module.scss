@@ -1,0 +1,88 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.boundaryless {
+  background-color: $bg-light;
+  text-align: center;
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 15vh 0;
+
+    @include lgMaxBreakPoint {
+      padding: 10vh 0;
+    }
+
+    .content {
+      max-width: 100vw;
+      @include lgMaxBreakPoint {
+
+        max-width: 80vw;
+      }
+      .subheading {
+        @include lgMaxBreakPoint {
+          text-align: left;
+          font-size: toRem(12);
+        }
+      }
+
+
+      .heading {
+        display: flex;
+        flex-direction: column;
+        //background-color: #9c66ff;
+        align-self: center;
+        width: 45%;
+        margin: 5vh auto;
+        //line-height: 7.6vw;
+
+        @include lgMaxBreakPoint {
+          margin-bottom : 5vh;
+          margin-top: 5px;
+          width: 100%;
+        }
+
+        p {
+          font-weight: 700;
+          align-self: flex-start;
+
+          &:last-child {
+            //margin-top: -2vh;
+            align-self: flex-end;
+
+            @include lgMaxBreakPoint {
+              align-self: flex-start;
+            }
+
+          }
+        }
+      }
+
+      .paragraph {
+        //width: 50%;
+
+        margin: 0 auto;
+
+        @include lgMaxBreakPoint {
+          margin: 0;
+        }
+
+        p {
+          line-height: 190.38%;
+          width: 100%;
+          color: $text-blend-dark;
+
+          @include lgMaxBreakPoint {
+            text-align: left;
+
+          }
+        }
+
+      }
+    }
+
+  }
+
+}

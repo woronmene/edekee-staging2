@@ -1,0 +1,46 @@
+@import "../../../styles/mixins";
+@import "../../../styles/functions";
+@import "../../../styles/variables";
+
+.downloadButtons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mdMaxBreakPoint {
+    flex-direction: column;
+    align-items: center;
+    // border: 1px solid red;
+  }
+
+  span {
+    img {
+      width: 13vw;
+      // margin-left: 20px;
+      @include lgMaxBreakPoint {
+        width: toRem(180);
+      }
+    }
+  }
+
+  .googlePlayBtn {
+    margin-right: 30px;
+    @include mdMaxBreakPoint {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  .apple {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+
+    p {
+      margin-top: 5px;
+    }
+  }
+}

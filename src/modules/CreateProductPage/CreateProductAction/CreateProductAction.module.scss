@@ -1,0 +1,69 @@
+.createProductAction {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.shopImageSection {
+  //   border: 1px solid red;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .shopImage {
+    width: 133px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: url("../../../../public/img/shopImage.png");
+    background-size: cover;
+    background-position: center;
+    // border: 2px solid black;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .shopName {
+    color: #212121f2;
+    font-weight: bold;
+  }
+}
+
+.mainHeading {
+  margin-bottom: 40px;
+  //   border: 1px solid red;
+}
+
+.heading {
+  font-weight: Bold;
+  font-size: 24px;
+  line-height: 29px;
+  line-height: 100%;
+  color: #212121f2;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info {
+  // border: 1px solid red;
+  margin: 0 auto;
+  font-weight: Bold;
+  font-size: 12px;
+  line-height: 15px;
+  line-height: 100%;
+  color: #525252;
+  width: 80%;
+  text-align: center;
+}
+
+.buttonSection {
+  //   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}

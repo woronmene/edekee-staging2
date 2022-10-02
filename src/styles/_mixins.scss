@@ -1,0 +1,117 @@
+// Breakpoints
+
+@mixin xsMaxBreakPoint {
+  @media (max-width: #{$screen-xs}) {
+    @content;
+  }
+}
+@mixin smMaxBreakPoint {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin mdMaxBreakPoint {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin lgMaxBreakPoint {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin xlMaxBreakPoint {
+  @media (max-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+@mixin xxlMaxBreakPoint {
+  @media (max-width: #{$screen-xxl}) {
+    @content;
+  }
+}
+
+@mixin fullMaxBreakPoint {
+  @media (max-width: #{$screen-full}) {
+    @content;
+  }
+}
+
+@mixin smMinBreakPoint {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin mdMinBreakPoint {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin lgMinBreakPoint {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin xlMinBreakPoint {
+  @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+@mixin xxlMinBreakPoint {
+  @media (min-width: #{$screen-xxl}) {
+    @content;
+  }
+}
+
+@mixin customMinBreakPoint($size) {
+  @media (min-width: $size+"px") {
+    @content;
+  }
+}
+
+@mixin customMaxBreakPoint($size) {
+  @media (max-width: $size+"px") {
+    @content;
+  }
+}
+
+// flex center
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-col {
+  @include flex-center;
+  flex-direction: column;
+}
+
+// flex-between
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// flex-around
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

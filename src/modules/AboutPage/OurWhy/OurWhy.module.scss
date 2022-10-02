@@ -1,0 +1,55 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.ourWhy {
+  width: 100vw;
+  height: 120vh;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  background-color: #000000;
+  @include mdMaxBreakPoint {
+    height: auto;
+
+    padding: 5rem 0;
+    //margin-bottom: 50px;
+    // border: 1px solid red;
+  }
+
+  .ourWhyWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid red;
+
+
+    img {
+      aspect-ratio: 1 / 1;
+      width: toRem(42);
+      margin: 2vw;
+      @include lgMaxBreakPoint {
+        font-size: toRem(30);
+        width: toRem(35);
+      }
+    }
+
+    .text {
+      //font-size: 4vw;
+      text-align: center;
+      width: 90%;
+      line-height: 126.3%;
+
+      @include lgMaxBreakPoint {
+        font-size: toRem(36);
+        width: 90%;
+        line-height: 40px;
+      }
+
+      @include mdMaxBreakPoint {
+        font-size: toRem(27);
+      }
+    }
+  }
+}

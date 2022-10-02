@@ -1,0 +1,94 @@
+@import "../../styles/functions";
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.shopPage {
+  min-height: 100vh;
+  background-color: #fff;
+  color: #212121f2;
+  padding-top: 10vh;
+
+  @include mdMaxBreakPoint {
+    padding-top: 5vh;
+  }
+
+  .wrapper {
+    // padding-bottom: 0;
+    padding: 0 30px;
+    width: 100%;
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid rgb(109, 68, 3);
+
+    @include mdMaxBreakPoint {
+      padding: 10vh 0;
+      // padding: 10vh 40px 0 40px;
+      // padding: 0 40px;
+      // padding-bottom: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+      // width: 90%;
+      margin: 0 auto;
+      //   flex-direction: column;
+      //   border: 2px solid rgb(3, 109, 53);
+    }
+  }
+}
+
+.profileTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.createProductSection {
+  // border: 1px solid rebeccapurple;
+  width: 100%;
+  text-align: right;
+}
+
+.createProductText {
+  color: #7630fa;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profilePic {
+  width: 133px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  //   border: 1px solid red;
+  background-image: url("../../../public/img/shopImage.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.profileName {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.gridSection {
+  width: 100%;
+  //   border: 3px solid black;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  @include xxlMaxBreakPoint {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include mdMaxBreakPoint {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

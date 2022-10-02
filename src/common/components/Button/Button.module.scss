@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.Button {
+  display: flex;
+  width: fit-content;
+  cursor: pointer;
+  p{
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: .8vw;
+    line-height: 19px;
+
+    @include mdMaxBreakPoint {
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+  };
+}

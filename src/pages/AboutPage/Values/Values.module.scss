@@ -1,0 +1,83 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.values {
+  height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  @include lgMaxBreakPoint {
+    height: 100%;
+    padding: 5vh 0;
+  }
+
+  &Wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  //.ellipse1 {
+  //  position: absolute;
+  //  top: -40%;
+  //  left: 10%;
+  //  transform: rotate(330deg);
+  //}
+  //.ellipse2 {
+  //  position: absolute;
+  //  top: -75%;
+  //  left: 65%;
+  //  transform: rotate(270deg);
+  //}
+
+  .mainContent {
+    @include mdMaxBreakPoint {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .container {
+      width: 100%;
+
+      .header {
+        margin-bottom: 5vh;
+        @include lgMaxBreakPoint {
+          margin-bottom: 0;
+        }
+
+        p {
+          line-height: 120.3%;
+          @include lgMaxBreakPoint {
+            text-align: left;
+            margin-top: 10px;
+            font-size: toRem(32);
+          }
+        }
+      }
+
+      .firstP {
+        margin-left: 60%;
+        width: 40%;
+        text-align: right;
+        padding: 5vh 0;
+        color: #8E8E93;
+
+        @include lgMaxBreakPoint {
+          margin-left: 30%;
+          margin-bottom: 10px;
+          width: 70%;
+        }
+      }
+
+      .secondP {
+        padding-top: 0;
+      }
+    }
+
+
+  }
+}

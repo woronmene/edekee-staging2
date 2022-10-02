@@ -1,0 +1,59 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.ecommerce {
+  background-color: #000000;
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 25vh 0;
+    position: relative;
+
+    @include lgMaxBreakPoint {
+      padding: 10vh 0;
+    }
+
+    .content {
+
+      .paragraph {
+        position: absolute;
+        top: 55%;
+        z-index: 2;
+        //opacity: 0.8;
+        width: 50%;
+
+        @include mdMaxBreakPoint {
+          position: relative;
+          width: 100%;
+        }
+      }
+    }
+
+    .container {
+      margin-top: 20vh;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      @include mdMaxBreakPoint {
+        height: 70vh;
+        margin-top: 5vh;
+
+      }
+
+      video {
+        width: 80%;
+        right: 0;
+
+        @include  mdMaxBreakPoint {
+          width: 90%;
+          margin: 0 auto;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}

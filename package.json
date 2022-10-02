@@ -1,0 +1,44 @@
+{
+  "name": "websitev2",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://admin.edekee.io/api",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "@sls-next/aws-cloudfront": "3.6.0",
+    "@sls-next/aws-lambda": "3.6.0",
+    "@sls-next/aws-sqs": "^3.5.3",
+    "@sls-next/domain": "^3.5.3",
+    "@sls-next/serverless-component": "3.6.0",
+    "axios": "^0.27.2",
+    "flutterwave-react-v3": "^1.2.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.5.1",
+    "next": "12.2.0",
+    "next-compose-plugins": "^2.2.1",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-color": "^2.19.3",
+    "react-colorful": "^5.6.1",
+    "react-dom": "18.2.0",
+    "react-otp-input": "^2.4.0",
+    "react-paystack": "^4.0.1",
+    "react-simple-toasts": "^2.2.3",
+    "sass": "^1.54.0",
+    "sharp": "^0.30.7",
+    "swiper": "^8.3.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^12.2.3",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.8"
+  }
+}

@@ -1,0 +1,99 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.mobileNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(30px);
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem 2.5rem;
+  display: none;
+  flex-direction: column;
+
+  a:hover {
+    color: #9c66ff;
+  }
+
+  @include mdMaxBreakPoint {
+    display: flex;
+    opacity: 0;
+  }
+  //justify-content: flex-start;
+
+  .cancel {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+
+    img {
+      cursor: pointer;
+    }
+
+    //background-color: red;
+  }
+
+  .links {
+    //padding-left: 1rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .items {
+      font-size: clamp(2vw, 40px, 50px);
+      //max-font-size: 40px;
+      margin-bottom: 3vh;
+      cursor: pointer;
+    }
+
+    .dropMenu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: rgba(255, 255, 255, 0.8);
+      //margin-bottom: 3vh;
+      //display: none;
+
+      .subItems {
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+        cursor: pointer;
+        font-size: clamp(2vw, 20px, 30px);
+      }
+    }
+
+    .show {
+      display: flex;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .actionButton {
+      margin-bottom: 0;
+      margin-top: 1vh;
+      border: 1px solid $purple;
+      border-radius: toRem(30);
+      padding: 0;
+      width: 9vw;
+      font-size: 12px;
+      // width: toRem(150);
+      height: 3vw;
+      // height: toRem(50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include lgMaxBreakPoint {
+        width: toRem(150);
+        height: toRem(50);
+      }
+    }
+  }
+}

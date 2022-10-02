@@ -1,0 +1,25 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.actionButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #53389E;
+  cursor: pointer;
+  height: 100%;
+  padding: 2vh 0;
+  vertical-align:center;
+
+  img {
+    padding-right: 15px;
+    height: toRem(20);
+    @include lgMaxBreakPoint {
+      padding-right: 10px;
+      height: toRem(15);
+    }
+
+
+  }
+}

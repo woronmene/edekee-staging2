@@ -1,0 +1,147 @@
+@import "../../../styles/functions";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.footer {
+  width: 100vw;
+  height: 60vh;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  @include mdMaxBreakPoint {
+    height: auto;
+    min-height: 100vh;
+
+    padding: 2rem 0;
+  }
+
+  .footerWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .footerTop {
+      width: 75%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+
+      .footerTopWrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+
+        @include mdMaxBreakPoint {
+          flex-direction: column;
+        }
+      }
+
+      @include lgMaxBreakPoint {
+        width: 90%;
+      }
+    }
+
+    .footerBottom {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 3%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 0.8vw;
+      @include mdMaxBreakPoint {
+      }
+
+      @include lgMaxBreakPoint {
+        font-size: toRem(13);
+        width: 95%;
+      }
+
+      .bottomLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        img {
+          width: 150px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .bottomCenter {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+
+        @include mdMaxBreakPoint {
+          display: none;
+        }
+
+        .terms {
+          margin-right: 30px;
+          cursor: pointer;
+        }
+
+        .privacy {
+          cursor: pointer;
+        }
+      }
+
+      .bottomRight {
+        //background-color: #9c66ff;
+        width: 11vw;
+        display: flex;
+        justify-content: space-around;
+
+        @include xlMaxBreakPoint {
+          width: 180px;
+        }
+        @include mdMaxBreakPoint {
+          display: none;
+        }
+
+        img {
+          margin: 0 5px;
+          width: toRem(30);
+        }
+      }
+    }
+
+    @include xlMaxBreakPoint {
+      width: 90%;
+    }
+
+    .footerLinks {
+      font-size: 1.1vw;
+      line-height: 2.6vw;
+      margin-bottom: 40px;
+      a{
+        color: white;
+      }
+
+      .firstLink {
+        margin-bottom: 15px;
+      }
+
+      @include lgMaxBreakPoint {
+        font-size: toRem(15);
+        line-height: toRem(40);
+      }
+    }
+
+    .footerLink {
+      margin-bottom: 4px;
+      font-weight: 200;
+    }
+  }
+}

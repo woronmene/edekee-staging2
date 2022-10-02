@@ -1,0 +1,62 @@
+.buildShopAction {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 110px;
+}
+
+.fundWalletSection {
+  // border: 1px solid red;
+  margin-bottom: 100px;
+  color: #000;
+  text-align: center;
+}
+
+.walletBalance {
+  margin-bottom: 40px;
+}
+
+.balance {
+  margin-bottom: 10px;
+}
+.fundWalletText {
+  font-size: 10px;
+}
+.balance {
+  font-size: 64px;
+  font-weight: 700;
+}
+.mainHeading {
+  margin-bottom: 40px;
+  //   border: 1px solid red;
+}
+
+.heading {
+  font-weight: Bold;
+  font-size: 24px;
+  line-height: 29px;
+  line-height: 100%;
+  color: #212121f2;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info {
+  // border: 1px solid red;
+  margin: 0 auto;
+  font-weight: Bold;
+  font-size: 12px;
+  line-height: 15px;
+  line-height: 100%;
+  color: #525252;
+  width: 80%;
+  text-align: center;
+}
+
+.buttonSection {
+  //   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}

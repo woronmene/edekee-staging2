@@ -1,0 +1,32 @@
+.inputSize {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #181614;
+  width: 100%;
+  font-size: 14px;
+  color: #525252;
+  padding: 7px 0;
+}
+
+.sizeQuantityValue {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: relative;
+}
+
+.sizeValueContainer,
+.quantityValueContainer {
+  // border: 1px solid red;
+  width: 30%;
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.cancel {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+}
