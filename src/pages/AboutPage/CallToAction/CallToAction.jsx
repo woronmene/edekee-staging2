@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import styles from "./CallToAction.module.scss";
 import {DownloadLink} from "../../../common/components";

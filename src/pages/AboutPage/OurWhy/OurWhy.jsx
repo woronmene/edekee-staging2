@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./OurWhy.module.scss";
 import { motion } from "framer-motion";
 import childVariant from "../../../common/Motion/text";
