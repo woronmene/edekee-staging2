@@ -1,7 +1,6 @@
-@import "../../../styles/functions";
-@import "../../../styles/mixins";
-@import "../../../styles/variables";
-
+@import "../../styles/mixins";
+@import "../../styles/functions";
+@import "../../styles/variables";
 .mobileNav {
   position: fixed;
   left: 0;

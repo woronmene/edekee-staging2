@@ -1,4 +1,4 @@
-import styles from './DownloadLink.module.scss'
+import styles from './DownloadLink.module.scss';
 
 export default function DownloadLink() {
 	return (
