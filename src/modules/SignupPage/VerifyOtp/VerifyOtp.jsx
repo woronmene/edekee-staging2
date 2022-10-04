@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import OtpInput from "react-otp-input";
 import { useState } from "react";
 import axios from "axios";
@@ -14,11 +15,11 @@ export default function VerifyOtp({
   setCurrentPage,
   email,
   password,
-  showOtp,
+  // showOtp,
 }) {
   const [otp, setOtp] = useState("");
-  const [isSuccess, setSuccess] = useState(false);
-  const [isLoading, setLoading] = useState(false);
+  // const [isSuccess, setSuccess] = useState(false);
+  // const [isLoading, setLoading] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
 
   toastConfig({
@@ -31,7 +32,7 @@ export default function VerifyOtp({
     "108185e1-ebc8-4f1b-b0f2-321925e8ecb0",
   ];
   function verifyOtp(otpValue) {
-    setLoading(true);
+    // setLoading(true);
     const params = {
       code: otpValue,
       email,

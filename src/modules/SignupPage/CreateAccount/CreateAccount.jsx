@@ -1,4 +1,5 @@
-;
+/* eslint-disable react/prop-types */
+
 import { useRouter } from "next/router";
 import InputText from "../../../common/components/InputText/InputText";
 import { Field, Formik } from "formik";
@@ -44,7 +45,7 @@ function CreateAccount({ setEmail, setPassword, generateOtp, signUpBtnState }) {
               password: Yup.string()
                 .required("Password is Required")
                 .matches(
-                  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+                  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/,
                   "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
                 ),
               confirmPassword: Yup.string()
