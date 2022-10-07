@@ -158,7 +158,7 @@ function TopupPage() {
                 </div>
 
                 <div className={styles.buttonSection}>
-                  <ShopButton
+                  {/* <ShopButton
                     size="large"
                     label="Fund Wallet"
                     // btnState={createShopBtnState}
@@ -168,7 +168,7 @@ function TopupPage() {
 
                       handleFlutterPrice(values.price);
                     }}
-                  />
+                  /> */}
                 <PaystackButton className={styles.paystackButton}  {...componentProps}/>
                 </div>
 
